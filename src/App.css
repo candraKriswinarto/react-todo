@@ -1,22 +1,83 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  max-width: 500px;
+  background: #0a3668;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,.5);
+}
+
+.app h1 {
   text-align: center;
+  text-transform: uppercase;
+  color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
+.todo-wrap {
+  display: flex;
+  margin-top: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo-wrap .todo {
+  flex: 50%;
+  background: #91aabb;
+  padding: .5rem;
+  font-size: 18px;
+}
+
+.todo-wrap button {
+  background: #a71532;
+  border: none;
+  padding: .5rem 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.todo-wrap button:hover {
+  opacity: .9;
+}
+
+.no-todo {
+  background: #91aabb;
+  text-align: center;
+  padding: 1rem 0;
+  margin: 1rem 0;
+  font-size: 20px;
+}
+
+.addtodo {
+  margin: 2.5rem 0 0 0;
+}
+
+
+.addtodo form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.addtodo label {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: .5rem;
+}
+
+.addtodo input {
+  height: 2.5rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding-right: 1rem;
+  text-indent: .5rem;
+  font-size: 18px;
 }
