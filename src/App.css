@@ -81,3 +81,17 @@
   text-indent: .5rem;
   font-size: 18px;
 }
+
+.message {
+  font-size: 16px;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.success {
+  background: #47f071;
+}
+
+.danger {
+  background: #e95e55;
+}
